@@ -3,6 +3,8 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> v;
         v.clear();
+        //brute-force approach:
+        //find the the indices of two numbers that add up to the 'target' variable
         for(int i=0; i<(int)nums.size(); ++i) {
             bool ok=0;
             for(int j=0; j<(int)nums.size(); ++j) {
